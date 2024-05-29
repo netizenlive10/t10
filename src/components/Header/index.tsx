@@ -62,20 +62,16 @@ const Header = () => {
                 className={`header-logo block w-full ${sticky ? "py-5 lg:py-2" : "py-8"
                   } `}
               >
+
                 <Image
-                  src="/images/logo/logo-2.svg"
+                  src="/images/logo/logo.png"
                   alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
+                  width={100}
+                  height={20}
+                  objectFit="contain"
+                  className="drop-shadow-[0_10px_25px_#4A6CF7] dark:drop-shadow-[0_10px_25px_rgba(255,255,255,1)]"
                 />
-                <Image
-                  src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
-                />
+
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
