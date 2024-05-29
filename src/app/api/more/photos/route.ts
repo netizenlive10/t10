@@ -2,21 +2,19 @@ import { NextRequest, NextResponse } from "next/server";
 import path from "path";
 import fs from 'fs'
 
-export const GET = async (req:NextRequest, res:NextResponse) => {
-  try { 
-    const directoryPath = path.resolve("./public/images/more/photos")
-    const directories = fs.readdirSync(directoryPath)
-    const response = [];
-    for (const directory of directories){
-      const filePath = path.join(directoryPath, directory, "thumbnail.jpg")
-      response.push({
-        thumbnail: directory,
-        heading: directory,
-        match_date: new Date(Math.random())
-      });
+export const GET = async (req: NextRequest, res: NextResponse) => {
+  try {
+    const directoryParam = req.nextUrl.searchParams.get("directory");
+    let directoryPath = path.resolve("./public/images/more/photos");
+
+    if (directoryParam){  
+      directoryPath = path.join(directoryPath, directoryParam);
     }
-    return new Response((JSON.stringify(response)));
+    const response = fs.readdirSync(directoryPath);
+    console.log(directoryPath)
+    return new Response((JSON.stringify(response || [])));
   } catch (error) {
+    console.log(error);
     return new Response(JSON.stringify({ message: "Some Error!" }));
   }
 }
