@@ -1,6 +1,6 @@
 import { memo, useEffect, useState } from 'react'
 
-const AppScrollToTop = memo(() => {
+const AppScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false)
 
   // Top: 0 takes us all the way back to the top of the page
@@ -40,6 +40,6 @@ const AppScrollToTop = memo(() => {
       )}
     </div>
   )
-})
+}
 
-export default AppScrollToTop
+export default memo(AppScrollToTop)

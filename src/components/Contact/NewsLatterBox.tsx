@@ -18,7 +18,7 @@ const NewsLatterBox = () => {
       </p>
       <div>
         <div className="w-72"></div>
-        <AppTextField name={'name'} placeholder="Enter your name" />
+        <AppTextField name={'name'} />
         {/* <input
           type="text"
           name="name"

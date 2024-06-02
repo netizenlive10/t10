@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
 
-const flowbite = require("flowbite-react/tailwind");
+// const flowbite = require("flowbite-react/tailwind");
 
 
 module.exports = {
@@ -10,11 +10,11 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    flowbite.content(),
+    // flowbite.content(),
   ],
   plugins: [
-    require("flowbite/plugin"),
-    flowbite.plugin(),
+    // require("flowbite/plugin"),
+    // flowbite.plugin(),
 
   ],
   darkMode: "class",

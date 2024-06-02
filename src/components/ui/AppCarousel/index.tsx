@@ -1,7 +1,7 @@
 import AppImage from '../AppImage'
 import { Carousel } from 'react-responsive-carousel'
 
-export default () => (
+const AppCarousel = () => (
   <Carousel autoPlay>
     <div>
       <AppImage
@@ -23,3 +23,5 @@ export default () => (
     </div>
   </Carousel>
 )
+
+export default AppCarousel
