@@ -24,9 +24,10 @@ export default function RootLayout({
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <NextTopLoader color="#2E78C7" height={2} />
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+        <NextTopLoader color="#2E78C7" height={2} />
+
         <Providers>
           <Header />
           {children}

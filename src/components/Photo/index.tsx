@@ -7,7 +7,11 @@ const Photo = ({ searchParams, path, index, isDirectory }) => {
       {isDirectory ? (
         <WithHeader path={path} />
       ) : (
-        <WithSlider path={path} directory={searchParams.directory} />
+        <WithSlider
+          path={path}
+          directory={searchParams.directory}
+          index={index}
+        />
       )}
     </div>
   )

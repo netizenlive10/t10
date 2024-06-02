@@ -1,25 +1,25 @@
-import Breadcrumb from "@/components/ui/Breadcrumb/Breadcrumb";
-import Contact from "@/components/Contact";
+import { Metadata } from 'next'
 
-import { Metadata } from "next";
+import Contact from '@/components/Contact'
+import AppBreadcrumb from '@/components/ui/AppBreadcrumb'
 
 export const metadata: Metadata = {
-  title: "Contact Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Contact Page for Startup Nextjs Template",
+  title: 'Contact Page | Free Next.js Template for Startup and SaaS',
+  description: 'This is Contact Page for Startup Nextjs Template',
   // other metadata
-};
+}
 
 const ContactPage = () => {
   return (
     <>
-      <Breadcrumb
+      <AppBreadcrumb
         pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="You can contact us by filling the following form or through social media."
       />
 
       <Contact />
     </>
-  );
-};
+  )
+}
 
-export default ContactPage;
+export default ContactPage

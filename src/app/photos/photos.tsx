@@ -1,16 +1,9 @@
 'use client'
 
-import { useState } from 'react'
-
 import Photo from '@/components/Photo'
+import CarouselWithModal from '@/components/Photo/CarouselWithModal'
 
 const Photos = ({ photosResponse, searchParams }) => {
-  const handleSlideChange = (index) => {
-    console.log(index)
-  }
-
-  const [slideIndex, setSlideIndex] = useState(50)
-
   return (
     <>
       <div className="container">
@@ -23,11 +16,16 @@ const Photos = ({ photosResponse, searchParams }) => {
                 path={path}
                 searchParams={searchParams}
                 index={index}
-                handleSlideChange={handleSlideChange}
               />
             ))}
           </div>
         </div>
+        {!photosResponse.isDirectory && (
+          <CarouselWithModal
+            photosResponse={photosResponse}
+            directory={searchParams.directory}
+          />
+        )}
       </div>
     </>
   )

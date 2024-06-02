@@ -1,26 +1,30 @@
-"use client";
+'use client'
 
-import { useTheme } from "next-themes";
+import { useTheme } from 'next-themes'
+
+import AppTextField from '@/components/ui/AppFormComponents/AppTextField'
 
 const NewsLatterBox = () => {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
 
   return (
     <div className="relative z-10 rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11">
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
-        Subscribe to receive future updates
+        Contact Us
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
         Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
         massa quis lectus.
       </p>
       <div>
-        <input
+        <div className="w-72"></div>
+        <AppTextField name={'name'} placeholder="Enter your name" />
+        {/* <input
           type="text"
           name="name"
-          placeholder="Enter your name"
+          placeholder=""
           className="border-stroke mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-        />
+        /> */}
         <input
           type="email"
           name="email"
@@ -61,12 +65,12 @@ const NewsLatterBox = () => {
                 gradientUnits="userSpaceOnUse"
               >
                 <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -97,12 +101,12 @@ const NewsLatterBox = () => {
                 gradientUnits="userSpaceOnUse"
               >
                 <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -133,12 +137,12 @@ const NewsLatterBox = () => {
                 gradientUnits="userSpaceOnUse"
               >
                 <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -187,11 +191,11 @@ const NewsLatterBox = () => {
               >
                 <stop
                   offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -205,11 +209,11 @@ const NewsLatterBox = () => {
               >
                 <stop
                   offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -223,11 +227,11 @@ const NewsLatterBox = () => {
               >
                 <stop
                   offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -241,11 +245,11 @@ const NewsLatterBox = () => {
               >
                 <stop
                   offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === 'light' ? '#4A6CF7' : '#fff'}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -254,7 +258,7 @@ const NewsLatterBox = () => {
         </span>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default NewsLatterBox;
+export default NewsLatterBox
