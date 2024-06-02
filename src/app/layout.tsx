@@ -2,9 +2,10 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import ScrollToTop from "@/components/ScrollToTop";
+import ScrollToTop from "@/components/ui/AppScrollToTop";
 import { Inter } from "next/font/google";
 import "../styles/index.css";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
+      <NextTopLoader color="#2E78C7" height={2} />
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
@@ -34,3 +36,4 @@ export default function RootLayout({
 }
 
 import { Providers } from "./providers";
+import NextTopLoader from "nextjs-toploader";

@@ -1,6 +1,7 @@
-import SectionTitle from "../Common/SectionTitle";
-import SingleBlog from "./SingleBlog";
-import blogData from "./blogData";
+import SectionTitle from '../ui/AppSectionTitle'
+
+import SingleBlog from './SingleBlog'
+import blogData from './blogData'
 
 const Blog = () => {
   return (
@@ -24,7 +25,7 @@ const Blog = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog

@@ -1,6 +1,7 @@
-import SectionTitle from "../Common/SectionTitle";
-import SingleFeature from "./SingleFeature";
-import featuresData from "./featuresData";
+import SectionTitle from '../ui/AppSectionTitle'
+
+import SingleFeature from './SingleFeature'
+import featuresData from './featuresData'
 
 const Features = () => {
   return (
@@ -21,7 +22,7 @@ const Features = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Features;
+export default Features

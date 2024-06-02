@@ -1,138 +1,117 @@
-import { Menu } from "@/types/menu";
+import { Menu } from '@/types/menu'
 
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Matches",
-    path: "/matches",
+    title: 'About',
+    path: '/about',
     newTab: false,
   },
   {
     id: 2,
-    title: "Videos",
+    title: 'Photos',
+    newTab: false,
+    path: '/photos',
+  },
+  {
+    id: 3,
+    title: 'Videos',
     newTab: false,
     submenu: [
       {
-        id: 2.1,
-        title: "T10 - Exculsive",
-        path: "/videos/t10-exclusive",
+        id: 3.1,
+        title: 'T10 - Exclusive',
+        path: '/videos/t10-exclusive',
         newTab: false,
       },
       {
-        id: 2.2,
-        title: "Highlights",
-        path: "/videos/highlights",
+        id: 3.2,
+        title: 'Highlights',
+        path: '/videos/highlights',
         newTab: false,
       },
       {
-        id: 2.3,
-        title: "Magic Moments",
-        path: "/videos/magic-moments",
+        id: 3.3,
+        title: 'Magic Moments',
+        path: '/videos/magic-moments',
         newTab: false,
       },
       {
-        id: 2.4,
-        title: "Invetviews",
-        path: "/videos/interviews",
+        id: 3.4,
+        title: 'Interviews',
+        path: '/videos/interviews',
         newTab: false,
       },
       {
-        id: 2.5,
-        title: "Press Conferences",
-        path: "/videos/press-conferences",
+        id: 3.5,
+        title: 'Press Conferences',
+        path: '/videos/press-conferences',
         newTab: false,
       },
       {
-        id: 2.6,
-        title: "All",
-        path: "/videos/all",
+        id: 3.6,
+        title: 'All',
+        path: '/videos/all',
         newTab: false,
       },
     ],
   },
   {
-    id: 3,
-    title: "Stats",
-    newTab: false,
-    submenu: [
-      {
-        id: 3.1,
-        title: "Overall Stats",
-        path: "/stats/overall-stats",
-        newTab: false,
-      },
-      {
-        id: 3.1,
-        title: "Head to Head",
-        path: "/stats/head-to-head",
-        newTab: false,
-      },
-    ]
-  },
-  {
     id: 4,
-    title: "Points Table",
-    path: "/points-table",
+    title: 'Matches',
     newTab: false,
+    path: '/matches',
   },
   {
     id: 5,
-    title: "News",
+    title: 'Teams',
+    path: '/teams',
     newTab: false,
-    submenu: [
-      {
-        id: 5.1,
-        title: "All News",
-        path: "/news/all-news",
-        newTab: false,
-      },
-      {
-        id: 5.2,
-        title: "Announcements",
-        path: "/news/announcements",
-        newTab: false,
-      },
-      {
-        id: 5.3,
-        title: "Match Reports",
-        path: "/news/match-reports",
-        newTab: false,
-      },
-    ]
   },
   {
     id: 6,
-    title: "More",
+    title: 'Contact Us',
+    path: '/contact-us',
+    newTab: false,
+  },
+  {
+    id: 7,
+    title: 'More',
     newTab: false,
     submenu: [
       {
-        id: 6.1,
-        title: "About",
-        path: "/more/about",
+        id: 7.1,
+        title: 'Login',
+        path: '/more/login',
         newTab: false,
       },
       {
-        id: 6.2,
-        title: "Photos",
-        path: "/more/photos",
+        id: 7.2,
+        title: 'Register',
+        path: '/more/register',
         newTab: false,
       },
       {
-        id: 6.3,
-        title: "Venues",
-        path: "/more/venues",
+        id: 7.3,
+        title: 'News',
+        path: '/more/news',
         newTab: false,
       },
       {
-        id: 6.4,
-        title: "Teams",
-        path: "/more/teams",
+        id: 7.4,
+        title: 'Venues',
+        path: '/more/venues',
         newTab: false,
       },
-    ]
-  },
 
+      {
+        id: 7.5,
+        title: 'Points Table',
+        path: '/points-table',
+        newTab: false,
+      },
+    ],
+  },
 ]
 
-
-export default menuData;
+export default menuData
