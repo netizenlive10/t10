@@ -1,28 +1,21 @@
-import Link from "next/link";
-
-import { Metadata } from "next";
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Matches Page",
-  description: "This is the matches page",
+  title: 'Matches Page',
+  description: 'This is the matches page',
   // other metadata
-};
+}
 
 const Matches = () => {
   return (
     <>
       <section className="relative z-10 overflow-hidden pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
-
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-
-              <h3 className="mb-3 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
+              <h3 className="mb-3 text-center text-2xl font-bold  text-white sm:text-3xl">
                 Matches Page
               </h3>
-
-
-
             </div>
           </div>
         </div>
@@ -36,7 +29,7 @@ const Matches = () => {
           >
             <mask
               id="mask0_95:1005"
-              style={{ maskType: "alpha" }}
+              style={{ maskType: 'alpha' }}
               maskUnits="userSpaceOnUse"
               x="0"
               y="0"
@@ -83,9 +76,9 @@ const Matches = () => {
             </defs>
           </svg>
         </div>
-      </section >
+      </section>
     </>
-  );
-};
+  )
+}
 
-export default Matches;
+export default Matches

@@ -1,5 +1,7 @@
+import AppLoader from '@/components/ui/AppLoader'
+
 const loading = () => {
-  return <div>loading</div>
+  return <AppLoader />
 }
 
 export default loading

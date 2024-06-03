@@ -1,14 +1,10 @@
 import { Metadata } from 'next'
 
-import AboutSectionOne from '@/components/About/AboutSectionOne'
-import AboutSectionTwo from '@/components/About/AboutSectionTwo'
-import Blog from '@/components/Blog'
-import Brands from '@/components/Brands'
-import Contact from '@/components/Contact'
-import Features from '@/components/Features'
-import Hero from '@/components/Hero'
-import Pricing from '@/components/Pricing'
-import Testimonials from '@/components/Testimonials'
+import HomePageCarousel from '@/components/Home/Carousel'
+import AppStartBackground from '@/components/ui/AppStarBackground'
+
+import { getCarousel } from '@/actions/home/carousel'
+import { CarouselProps } from '@/types/home/carousel'
 
 export const metadata: Metadata = {
   title: 'Free Next.js Template for Startup and SaaS',
@@ -16,18 +12,17 @@ export const metadata: Metadata = {
   // other metadata
 }
 
-export default function Home() {
+const Home = async () => {
+  const carousel: CarouselProps = await getCarousel()
   return (
-    <>
-      <Hero />
-      <Features />
-      <Brands />
-      <AboutSectionOne />
-      <AboutSectionTwo />
-      <Testimonials />
-      <Pricing />
-      <Blog />
-      <Contact />
-    </>
+    <main className="bg-dark">
+      {/* <AppBreadcrumb pageName="" description="" /> */}
+      <section className="relative z-10 overflow-hidden pt-18 lg:pt-[110px]">
+        <AppStartBackground />
+      </section>
+      <HomePageCarousel carousel={carousel} />
+    </main>
   )
 }
+
+export default Home

@@ -43,10 +43,10 @@ module.exports = withMT({
         transparent: "transparent",
         white: "#FFFFFF",
         black: "#081033",
-        dark: "#1D2430",
+        dark: "#171C28",
         primary: "#4A6CF7",
         yellow: "#FBB040",
-        "bg-color-dark": "#171C28",
+        "bg-color-dark": "#0d1844",
         "body-color": {
           DEFAULT: "#788293",
           dark: "#959CB1",

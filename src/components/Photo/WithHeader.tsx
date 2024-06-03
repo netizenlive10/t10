@@ -5,7 +5,7 @@ import StyledImage from './StyledImage'
 const WithHeader = ({ path }) => {
   return (
     <Link href={`/photos?directory=${path}`}>
-      <div className="s shadow-primary-400 absolute left-3 top-3 rounded-md bg-white fill-black  p-1  px-2 dark:bg-gray-dark dark:fill-white dark:shadow-sticky-dark shadow-sm shadow-slate-300">
+      <div className="s shadow-primary-400 absolute left-3 top-3 rounded-md   p-1  px-2 bg-gray-dark fill-white shadow-sticky-dark shadow-slate-300">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
@@ -20,11 +20,11 @@ const WithHeader = ({ path }) => {
         alt="Thumbnail"
       />
       <>
-        <div className="absolute bottom-0 w-full  bg-transparent  backdrop-brightness-50">
-          <h3 className="ml-3 font-semibold text-white">
+        <div className="absolute bottom-0 w-full   bg-transparent  backdrop-brightness-50">
+          <h3 className="ml-3 font-semibold text-white ">
             {path?.split('_')[0]}
           </h3>
-          <p className="mb-2 ml-3  text-sm text-slate-300">
+          <p className="mb-2 ml-3  text-sm  text-blue-gray-50">
             {path?.split('_')?.[1]}
           </p>
         </div>

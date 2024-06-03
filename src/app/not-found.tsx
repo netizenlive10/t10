@@ -1,12 +1,11 @@
-import Link from "next/link";
-
-import { Metadata } from "next";
+import { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Error Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Error Page for Startup Nextjs Template",
+  title: 'Error Page | Free Next.js Template for Startup and SaaS',
+  description: 'This is Error Page for Startup Nextjs Template',
   // other metadata
-};
+}
 
 const ErrorPage = () => {
   return (
@@ -45,7 +44,7 @@ const ErrorPage = () => {
                     />
                     <mask
                       id="mask0_116:1137"
-                      style={{ maskType: "alpha" }}
+                      style={{ maskType: 'alpha' }}
                       maskUnits="userSpaceOnUse"
                       x="159"
                       y="13"
@@ -141,7 +140,7 @@ const ErrorPage = () => {
                     </defs>
                   </svg>
                 </div>
-                <h3 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
+                <h3 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
                   Sorry, the page can’t be found
                 </h3>
                 <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
@@ -532,7 +531,7 @@ const ErrorPage = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default ErrorPage;
+export default ErrorPage

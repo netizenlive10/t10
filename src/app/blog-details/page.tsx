@@ -1,14 +1,14 @@
-import SharePost from "@/components/Blog/SharePost";
-import TagButton from "@/components/Blog/TagButton";
-import Image from "next/image";
+import { Metadata } from 'next'
+import Image from 'next/image'
 
-import { Metadata } from "next";
+import SharePost from '@/components/Blog/SharePost'
+import TagButton from '@/components/Blog/TagButton'
 
 export const metadata: Metadata = {
-  title: "Blog Details Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Details Page for Startup Nextjs Template",
+  title: 'Blog Details Page | Free Next.js Template for Startup and SaaS',
+  description: 'This is Blog Details Page for Startup Nextjs Template',
   // other metadata
-};
+}
 
 const BlogDetailsPage = () => {
   return (
@@ -18,11 +18,11 @@ const BlogDetailsPage = () => {
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4 lg:w-8/12">
               <div>
-                <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
+                <h2 className="mb-8 text-3xl font-bold leading-tight text-white sm:text-4xl sm:leading-tight">
                   10 amazing sites to download stock photos & digital assets for
                   free
                 </h2>
-                <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
+                <div className="mb-10 flex flex-wrap items-center justify-between border-b   pb-4 border-white border-opacity-10">
                   <div className="flex flex-wrap items-center">
                     <div className="mb-5 mr-10 flex items-center">
                       <div className="mr-4">
@@ -123,23 +123,21 @@ const BlogDetailsPage = () => {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis enim lobortis scelerisque fermentum. Neque
                     sodales ut etiam sit amet. Ligula ullamcorper
-                    <strong className="text-primary dark:text-white">
-                      malesuada
-                    </strong>
+                    <strong className="text-white">malesuada</strong>
                     proin libero nunc consequat interdum varius. Quam
                     pellentesque nec nam aliquam sem et tortor consequat.
                     Pellentesque adipiscing commodo elit at imperdiet.
                   </p>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Semper auctor neque vitae tempus quam pellentesque nec.
-                    <span className="text-primary underline dark:text-white">
+                    <span className="underline text-white">
                       Amet dictum sit amet justo
                     </span>
                     donec enim diam. Varius sit amet mattis vulputate enim nulla
                     aliquet porttitor. Odio pellentesque diam volutpat commodo
                     sed.
                   </p>
-                  <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
+                  <h3 className="font-xl mb-10 font-bold leading-tight text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Digital marketplace for Ui/Ux designers.
                   </h3>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
@@ -237,7 +235,7 @@ const BlogDetailsPage = () => {
                         />
                         <mask
                           id="mask0_111:596"
-                          style={{ maskType: "alpha" }}
+                          style={{ maskType: 'alpha' }}
                           maskUnits="userSpaceOnUse"
                           x="0"
                           y="0"
@@ -341,7 +339,7 @@ const BlogDetailsPage = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default BlogDetailsPage;
+export default BlogDetailsPage

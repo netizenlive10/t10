@@ -25,7 +25,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className={`bg-black ${inter.className}`}>
         <NextTopLoader color="#2E78C7" height={2} />
 
         <Providers>
