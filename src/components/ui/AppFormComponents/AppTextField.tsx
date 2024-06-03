@@ -27,9 +27,9 @@ const AppTextField = ({
       label={label}
       type={type}
       name={name}
-      // {...register(name, {
-      //   required: required,
-      // })}
+      {...register(name, {
+        required: required,
+      })}
     >
       {children}
     </Input>

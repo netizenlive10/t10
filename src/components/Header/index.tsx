@@ -60,27 +60,15 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12 relative">
-              <Image
-                alt="Logo"
-                src="/images/logo/header-logo-bomb-left.svg"
-                width={120}
-                height={70}
-                className=" absolute left-0 top-0 w-full h-full object-contain"
-              />
-              <Link
-                href="/"
-                className={`header-logo block w-full ${
-                  sticky ? 'py-5 lg:py-2' : 'py-2'
-                } `}
-              >
+            <div className=" w-96 max-w-full xl:mr-12 relative">
+              <Link href="/">
                 <Image
                   src="/images/logo/logo.png"
                   alt="logo"
                   width="0"
                   height="0"
                   sizes="100vw"
-                  className="drop-shadow-[0_10px_25px_#4A6CF7] dark:drop-shadow-[0_10px_25px_rgba(255,255,255,0.6)]  w-24"
+                  className="drop-shadow-[0_10px_25px_#4A6CF7] dark:drop-shadow-[0_10px_25px_rgba(255,255,255,0.6)]  h-[80px] w-full object-contain"
                 />
               </Link>
             </div>
