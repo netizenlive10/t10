@@ -15,7 +15,7 @@ const PhotosPage = async ({ searchParams }) => {
       />
       <section
         id="photo gallery"
-        className="pt-8 md:pt-12 lg:pt-10 relative mb-2"
+        className="pt-8 md:pt-12 lg:pt-10 relative mb-2 "
       >
         <Photos photosResponse={photosResponse} searchParams={searchParams} />
 

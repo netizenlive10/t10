@@ -1,55 +1,57 @@
 'use client'
 
 import {
-  Button,
+  Carousel,
   Dialog,
   DialogBody,
   DialogHeader,
+  IconButton,
 } from '@material-tailwind/react'
+import { X } from 'lucide-react'
 import { useRecoilState } from 'recoil'
 
 // import { Dialog, DialogHeader } from '@/components/ui/dialog'
-import { photoCarouselAtom, photoModalAtom } from '@/store/atoms/photoAtom'
+import AppImage from '@/components/ui/AppImage'
+
+import { photoModalAtom } from '@/store/atoms/photoAtom'
 
 export default function DialogCloseButton({ directory, photosResponse }) {
   const [isPhotoModalOpen, setIsPhotoModalOpen] = useRecoilState(photoModalAtom)
-  const [api, setApi] = useRecoilState(photoCarouselAtom)
   const handleOpen = (value) => setIsPhotoModalOpen(value)
 
   return (
-    // <Dialog open={isPhotoModalOpen} onOpenChange={setIsPhotoModalOpen}>
-    //   <DialogContent className="min-w-[75vw] max-w-[1200px]">
-    //     <DialogHeader>
-    //       <DialogTitle>{directory}</DialogTitle>
-    //       <DialogDescription>{new Date().getFullYear()}</DialogDescription>
-    //     </DialogHeader>
-    //     {/* <div className="   relative"> */}
-    //     {/* <AppCarousel
-    //       // setApi={setApi}
-    //       // CarouselItems={
-    //       //   <CarouselItems
-    //       //     photosResponse={photosResponse}
-    //       //     directory={directory}
-    //       //   />
-    //       // }
-    //       />
-    //     </div> */}
-    //   </DialogContent>
-    // </Dialog>
-
-    <Dialog open={isPhotoModalOpen} size={'xxl'} handler={handleOpen}>
-      <DialogHeader>
+    <Dialog
+      open={isPhotoModalOpen}
+      size={'xxl'}
+      className=" bg-bg-color-dark"
+      handler={handleOpen}
+    >
+      <DialogHeader className=" text-white flex  justify-between   items-center">
         {directory.split('_')?.[0]}
-        <Button
-          variant="filled"
-          color="red"
-          onClick={() => handleOpen(false)}
-          className="mr-1 float-right"
+        <IconButton
+          className="rounded-full"
+          onClick={() => setIsPhotoModalOpen(false)}
         >
-          <span>Cancel</span>
-        </Button>
+          <X />
+        </IconButton>
       </DialogHeader>
-      <DialogBody>{directory.split('_')?.[1]}</DialogBody>
+
+      <DialogBody className="  text-gray-300">
+        <div>{directory.split('_')?.[1]}</div>
+
+        <Carousel className=" min-h-[80vh] w-full">
+          {photosResponse.path?.map((path, index) => (
+            <AppImage
+              key={index}
+              src={`/images/photos/${directory}/${path}`}
+              alt="Carousel"
+              width={300}
+              height={500}
+              className="max-h-[80vh] w-full object-contain min-h-[700px]"
+            />
+          ))}
+        </Carousel>
+      </DialogBody>
     </Dialog>
   )
 }

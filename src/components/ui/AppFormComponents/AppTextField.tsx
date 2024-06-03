@@ -23,7 +23,7 @@ const AppTextField = ({
 
   return (
     <Input
-      size={size}
+      size={'lg'}
       label={label}
       type={type}
       name={name}

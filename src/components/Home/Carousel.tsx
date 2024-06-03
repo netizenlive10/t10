@@ -4,16 +4,19 @@ import { Carousel } from '@material-tailwind/react'
 
 import AppImage from '@/components/ui/AppImage'
 
-import { CarouselProps } from '@/types/home/carousel'
+const videoUrls = [
+  'https://www.youtube.com/embed/hO75FFb8tGM?si=T4pVK6EpQt5BxefT',
+  'https://www.youtube.com/embed/yRo0vTwdkx8?si=Umh7YeQwNDrjQ0mj',
+  'https://www.youtube.com/embed/JPYcTMVkbUo?si=OZCrB_byuXaHNKvJ',
+  'https://www.youtube.com/embed/jDf_CgC8ZCA?si=TcCsmMmLh8WtiCOC',
+]
 
-const HomePageCarousel = ({ carousel }: CarouselProps) => {
+const HomePageCarousel = ({ carousel }) => {
   return (
     <Carousel
       transition={{ duration: 2 }}
       loop={true}
-      autoplay={true}
       className="rounded-xl"
-      autoplayDelay={3000}
       navigation={() => <></>}
     >
       {carousel?.map((carouselItem, index) => (
@@ -25,6 +28,17 @@ const HomePageCarousel = ({ carousel }: CarouselProps) => {
           height={700}
           className=" max-h-[80vh] w-full object-contain min-h-[700px]"
         />
+      ))}
+      {videoUrls.map((url, index) => (
+        <iframe
+          key={index}
+          className="h-full  min-h-[700px] w-full rounded-lg"
+          src={url}
+          title=" "
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       ))}
     </Carousel>
   )
