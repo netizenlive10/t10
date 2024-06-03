@@ -60,7 +60,14 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+            <div className="w-60 max-w-full px-4 xl:mr-12 relative">
+              <Image
+                alt="Logo"
+                src="/images/logo/header-logo-bomb-left.svg"
+                width={120}
+                height={70}
+                className=" absolute left-0 top-0 w-full h-full object-contain"
+              />
               <Link
                 href="/"
                 className={`header-logo block w-full ${

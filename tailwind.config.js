@@ -1,21 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
+const withMT = require("@material-tailwind/react/utils/withMT");
 
-// const flowbite = require("flowbite-react/tailwind");
-
-
-module.exports = {
+module.exports = withMT({
   content: [
     "./node_modules/flowbite-react/lib/**/*.js",
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    // flowbite.content(),
   ],
   plugins: [
-    // require("flowbite/plugin"),
-    // flowbite.plugin(),
-
   ],
   darkMode: "class",
   theme: {
@@ -87,5 +81,4 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-};
+})
