@@ -7,17 +7,17 @@ const NotificationBar = () => {
       <div className=" flex justify-center gap-4">
         <SocialIcon
           href="https://facebook.com"
-          src="/images/social/facebook.svg"
+          src="/assets/social/facebook.svg"
           alt="Facebook"
         />
         <SocialIcon
           href="https://youtube.com"
-          src="/images/social/youtube.svg"
+          src="/assets/social/youtube.svg"
           alt="Youtube"
         />
         <SocialIcon
           href="https://twitter.com"
-          src="/images/social/twitter.svg"
+          src="/assets/social/twitter.svg"
           alt="Twitter"
         />
       </div>

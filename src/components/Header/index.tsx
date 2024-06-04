@@ -61,7 +61,7 @@ const Header = () => {
             <div className=" w-96 max-w-full xl:mr-12 relative">
               <Link href="/">
                 <Image
-                  src="/images/logo/logo.png"
+                  src="/assets/logo/logo.png"
                   alt="logo"
                   width="0"
                   height="0"
@@ -158,7 +158,7 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Image
-                  src="/images/logo/logo1.png"
+                  src="/assets/logo/logo1.png"
                   alt="logo"
                   width="0"
                   height="0"

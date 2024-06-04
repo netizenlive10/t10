@@ -16,7 +16,7 @@ const AppImage = ({ height, width, src, alt, className }: ImageProps) => {
     <Image
       height={height}
       width={width}
-      src={error ? '/images/social/brokenImage.svg' : src}
+      src={error ? '/assets/social/brokenImage.svg' : src}
       alt={alt}
       className={`object-contain ${className}`}
       loading="lazy"

@@ -1,5 +1,4 @@
-'use client'
-
+// 'use client'
 import SocialIcon from '../NotificationBar/SocialIcon'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -14,7 +13,7 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src="/images/logo/logo.svg"
+                    src="/assets/logo/logo.png"
                     alt="logo"
                     className="w-full block"
                     width={140}
@@ -29,22 +28,22 @@ const Footer = () => {
                 <div className=" flex w-full  gap-4">
                   <SocialIcon
                     href="https://www.facebook.com/gramint10latur"
-                    src="/images/social/facebook.svg"
+                    src="/assets/social/facebook.svg"
                     alt="Facebook"
                   />
                   <SocialIcon
                     href="https://www.youtube.com/@GraminT10"
-                    src="/images/social/youtube.svg"
+                    src="/assets/social/youtube.svg"
                     alt="Youtube"
                   />
                   <SocialIcon
                     href="https://www.instagram.com/gramin_t10/"
-                    src="/images/social/instagram.svg"
+                    src="/assets/social/instagram.svg"
                     alt="Instagram"
                   />
                   <SocialIcon
                     href="https://x.com/10Gramin"
-                    src="/images/social/twitter.svg"
+                    src="/assets/social/twitter.svg"
                     alt="Twitter"
                   />
                 </div>
