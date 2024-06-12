@@ -1,4 +1,4 @@
-const AppStartBackground = () => {
+const AppStarBackground = () => {
   return (
     <div>
       <span className="absolute left-0 top-0 z-[-1]">
@@ -77,4 +77,4 @@ const AppStartBackground = () => {
   )
 }
 
-export default AppStartBackground
+export default AppStarBackground

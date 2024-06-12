@@ -2,8 +2,9 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Sign Up Page | Free Next.js Template for Startup and SaaS',
-  description: 'This is Sign Up Page for Startup Nextjs Template',
+  title:
+    'Sign Up Page | लोकनेते विलासराव देशमुख क्रिकेट चॅम्पियनशीप ग्रामीण टी 10 जिल्‍हास्‍तरीय क्रिकेट स्‍पर्धा.',
+  description: 'This is Sign Up Page ',
   // other metadata
 }
 
@@ -14,14 +15,14 @@ const SignupPage = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="shadow-three mx-auto max-w-[500px] rounded bg-white px-6 py-10 bg-dark sm:p-[60px]">
+              <div className="shadow-three mx-auto max-w-[500px] rounded  px-6 py-10 bg-dark sm:p-[60px]">
                 <h3 className="mb-3 text-center text-2xl font-bold  text-white sm:text-3xl">
                   Create your account
                 </h3>
                 <p className="mb-11 text-center text-base font-medium text-body-color">
                   It’s totally free and super easy
                 </p>
-                <button className="border-stroke text-body-color-dark shadow-two mb-6 flex w-full items-center justify-center rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary border-transparent bg-[#2C303B] hover:border-primary hover:bg-primary/5 hover:text-primary hover:shadow-none">
+                <button className="border-stroke  shadow-two mb-6 flex w-full items-center justify-center rounded-sm border  px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary border-transparent bg-[#2C303B] hover:border-primary hover:bg-primary/5 hover:text-primary hover:shadow-none">
                   <span className="mr-3">
                     <svg
                       width="20"
@@ -58,7 +59,7 @@ const SignupPage = () => {
                   Sign in with Google
                 </button>
 
-                <button className="border-stroke text-body-color-dark shadow-two mb-6 flex w-full items-center justify-center rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary border-transparent bg-[#2C303B] hover:border-primary hover:bg-primary/5 hover:text-primary hover:shadow-none">
+                <button className="border-stroke shadow-two mb-6 flex w-full items-center justify-center rounded-sm border  px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary border-transparent bg-[#2C303B] hover:border-primary hover:bg-primary/5 hover:text-primary hover:shadow-none">
                   <span className="mr-3">
                     <svg
                       fill="currentColor"
@@ -92,7 +93,7 @@ const SignupPage = () => {
                       type="text"
                       name="name"
                       placeholder="Enter your full name"
-                      className="border-stroke text-body-color-dark shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary border-transparent bg-[#2C303B] focus:border-primary focus:shadow-none"
+                      className="border-stroke  shadow-two w-full rounded-sm border  px-6 py-3 text-base text-body-color outline-none transition-all duration-300  border-transparent bg-[#2C303B] focus:border-primary focus:shadow-none"
                     />
                   </div>
                   <div className="mb-8">
@@ -107,7 +108,7 @@ const SignupPage = () => {
                       type="email"
                       name="email"
                       placeholder="Enter your Email"
-                      className="border-stroke text-body-color-dark shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary border-transparent bg-[#2C303B] focus:border-primary focus:shadow-none"
+                      className="border-stroke  shadow-two w-full rounded-sm border  px-6 py-3 text-base text-body-color outline-none transition-all duration-300  border-transparent bg-[#2C303B] focus:border-primary focus:shadow-none"
                     />
                   </div>
                   <div className="mb-8">
@@ -122,7 +123,7 @@ const SignupPage = () => {
                       type="password"
                       name="password"
                       placeholder="Enter your Password"
-                      className="border-stroke text-body-color-dark shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary border-transparent bg-[#2C303B] focus:border-primary focus:shadow-none"
+                      className="border-stroke  shadow-two w-full rounded-sm border  px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary border-transparent bg-[#2C303B] focus:border-primary focus:shadow-none"
                     />
                   </div>
                   <div className="mb-8 flex">

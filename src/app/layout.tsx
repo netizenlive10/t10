@@ -1,5 +1,3 @@
-'use client'
-
 import '../styles/index.css'
 import { Inter } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
@@ -19,10 +17,6 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head>
         <title>
           लोकनेते विलासराव देशमुख क्रिकेट चॅम्पियनशीप ग्रामीण टी 10
@@ -35,7 +29,7 @@ export default function RootLayout({
 
         <Providers>
           <Header />
-          <main className="min-h-[80vh]">{children}</main>
+          <main className="min-h-[80vh]  relative">{children}</main>
           <Footer />
           <ScrollToTop />
         </Providers>

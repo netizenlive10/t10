@@ -5,8 +5,9 @@ import AboutSectionTwo from '@/components/About/AboutSectionTwo'
 import Breadcrumb from '@/components/ui/AppBreadcrumb'
 
 export const metadata: Metadata = {
-  title: 'About Page | Free Next.js Template for Startup and SaaS',
-  description: 'This is About Page for Startup Nextjs Template',
+  title:
+    'About Page | लोकनेते विलासराव देशमुख क्रिकेट चॅम्पियनशीप ग्रामीण टी 10 जिल्‍हास्‍तरीय क्रिकेट स्‍पर्धा.',
+  description: 'This is About Page ',
   // other metadata
 }
 

@@ -7,8 +7,9 @@ import TagButton from '@/components/Blog/TagButton'
 import NewsLatterBox from '@/components/Contact/NewsLatterBox'
 
 export const metadata: Metadata = {
-  title: 'Blog Details Page | Free Next.js Template for Startup and SaaS',
-  description: 'This is Blog Details Page for Startup Nextjs Template',
+  title:
+    'Blog Details Page | लोकनेते विलासराव देशमुख क्रिकेट चॅम्पियनशीप ग्रामीण टी 10 जिल्‍हास्‍तरीय क्रिकेट स्‍पर्धा.',
+  description: 'This is Blog Details Page ',
   // other metadata
 }
 

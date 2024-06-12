@@ -68,12 +68,7 @@ const menuData: Menu[] = [
     path: '/teams',
     newTab: false,
   },
-  {
-    id: 6,
-    title: 'Contact Us',
-    path: '/contact',
-    newTab: false,
-  },
+
   {
     id: 7,
     title: 'More',
@@ -93,19 +88,25 @@ const menuData: Menu[] = [
       },
       {
         id: 7.3,
+        title: 'Contact Us',
+        path: '/contact',
+        newTab: false,
+      },
+      {
+        id: 7.4,
         title: 'News',
         path: '/more/news',
         newTab: false,
       },
       {
-        id: 7.4,
+        id: 7.5,
         title: 'Venues',
         path: '/more/venues',
         newTab: false,
       },
 
       {
-        id: 7.5,
+        id: 7.6,
         title: 'Points Table',
         path: '/points-table',
         newTab: false,

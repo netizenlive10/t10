@@ -16,23 +16,25 @@ const HomePageCarousel = ({ carousel }) => {
     <Carousel
       transition={{ duration: 2 }}
       loop={true}
-      className="rounded-xl"
+      className="rounded-xl h-[150px] sm:h-[330px] md:h-[450px] lg:h-full max-h-[70vh]  bg-dark overflow-hidden"
       navigation={() => <></>}
     >
-      {carousel?.map((carouselItem, index) => (
+      {carousel?.map((carouselItem: string, index: number) => (
         <AppImage
           key={index}
           src={`/images/home/carousel/${carouselItem}`}
           alt="Carousel"
           width={1200}
           height={700}
-          className=" max-h-[80vh] w-full object-contain min-h-[700px]"
+          className="w-full object-cover h-full"
         />
       ))}
+
       {videoUrls.map((url, index) => (
         <iframe
+          height={'100%'}
           key={index}
-          className="h-full  min-h-[700px] w-full rounded-lg"
+          className="w-full h-[150px] sm:h-[330px] md:h-[450px]  lg:h-[70vh] "
           src={url}
           title=" "
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -2,8 +2,9 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Error Page | Free Next.js Template for Startup and SaaS',
-  description: 'This is Error Page for Startup Nextjs Template',
+  title:
+    'Error Page | लोकनेते विलासराव देशमुख क्रिकेट चॅम्पियनशीप ग्रामीण टी 10 जिल्‍हास्‍तरीय क्रिकेट स्‍पर्धा.',
+  description: 'This is Error Page',
   // other metadata
 }
 

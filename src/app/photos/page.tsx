@@ -1,9 +1,9 @@
+import Image from 'next/image'
+
 import AppBreadcrumb from '@/components/ui/AppBreadcrumb/index'
 
 import Photos from './photos'
 import { getPhotos } from '@/actions/photos'
-import Batsman from '@/icons/Batsman'
-import Bowler from '@/icons/Bowler'
 
 const PhotosPage = async ({ searchParams }) => {
   const photosResponse = await getPhotos(searchParams.directory)
@@ -15,20 +15,26 @@ const PhotosPage = async ({ searchParams }) => {
       />
       <section
         id="photo gallery"
-        className="pt-8 md:pt-12 lg:pt-10 relative mb-2 "
+        className="pt-8 md:pt-12 lg:pt-10  mb-2 border-white/[.15] border-b"
       >
         <Photos photosResponse={photosResponse} searchParams={searchParams} />
 
-        <div className="">
-          <Bowler
-            className={
-              'absolute -left-24 -bottom-6 z-[-1]  drop-shadow-[5px_2px_1px_#4A6CF7] max-h-[450px]'
-            }
+        <div className="flex align-center justify-between relative">
+          <Image
+            src="/assets/bowler.png"
+            alt="bowler"
+            width={300}
+            height={300}
+            className="w-[300px] h-[250px] md:h-96 object-contain drop-shadow-[5px_2px_1px_#4A6CF7]"
+            priority={true}
           />
-          <Batsman
-            className={
-              'absolute -right-20 bottom-0 z-[-1]   drop-shadow-[5px_2px_1px_#4A6CF7]  max-h-[350px]'
-            }
+          <Image
+            src="/assets/batsman.png"
+            alt="bowler"
+            width={300}
+            height={300}
+            className="w-[300px] h-[250px] md:h-96 object-contain drop-shadow-[5px_2px_1px_#4A6CF7]"
+            priority={true}
           />
         </div>
       </section>

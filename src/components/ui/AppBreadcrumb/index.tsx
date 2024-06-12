@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { memo } from 'react'
 
-import AppStartBackground from '@/components/ui/AppStarBackground'
+import AppStarBackground from '@/components/ui/AppStarBackground'
 
 const AppBreadcrumb = ({
   pageName,
@@ -46,7 +46,7 @@ const AppBreadcrumb = ({
           </div>
         </div>
 
-        <AppStartBackground />
+        <AppStarBackground />
       </section>
     </>
   )

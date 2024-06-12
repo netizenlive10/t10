@@ -4,8 +4,9 @@ import Contact from '@/components/Contact'
 import AppBreadcrumb from '@/components/ui/AppBreadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Contact Page | Free Next.js Template for Startup and SaaS',
-  description: 'This is Contact Page for Startup Nextjs Template',
+  title:
+    'Contact Page | लोकनेते विलासराव देशमुख क्रिकेट चॅम्पियनशीप ग्रामीण टी 10 जिल्‍हास्‍तरीय क्रिकेट स्‍पर्धा.',
+  description: 'This is Contact Page',
   // other metadata
 }
 

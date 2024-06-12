@@ -1,14 +1,15 @@
-import SingleBlog from "@/components/Blog/SingleBlog";
-import blogData from "@/components/Blog/blogData";
-import Breadcrumb from "@/components/ui/AppBreadcrumb";
+import { Metadata } from 'next'
 
-import { Metadata } from "next";
+import SingleBlog from '@/components/Blog/SingleBlog'
+import blogData from '@/components/Blog/blogData'
+import Breadcrumb from '@/components/ui/AppBreadcrumb'
 
 export const metadata: Metadata = {
-  title: "Blog Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Page for Startup Nextjs Template",
+  title:
+    'Blog Page | लोकनेते विलासराव देशमुख क्रिकेट चॅम्पियनशीप ग्रामीण टी 10 जिल्‍हास्‍तरीय क्रिकेट स्‍पर्धा.',
+  description: 'This is Blog Page ',
   // other metadata
-};
+}
 
 const Blog = () => {
   return (
@@ -93,7 +94,7 @@ const Blog = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog
