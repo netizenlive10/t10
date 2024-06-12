@@ -24,6 +24,7 @@ const AppTextField = ({
   return (
     <Input
       size={'lg'}
+      className="text-white text-[18px] tracking-wider font-light space-x-2 "
       label={label}
       type={type}
       name={name}

@@ -13,8 +13,8 @@ const NewsLatterBox = () => {
         Contact Us
       </h3>
       <p className="mb-11 border-b  pb-11 text-base leading-relaxed text-body-color border-white border-opacity-25">
-        Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
-        massa quis lectus.
+        {/* Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
+        massa quis lectus. */}
       </p>
       <div>
         <div className="w-72"></div>
@@ -32,7 +32,7 @@ const NewsLatterBox = () => {
           className="mb-5 flex w-full cursor-pointer items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 shadow-submit-dark"
         /> */}
         <p className="text-center text-base leading-relaxed  text-body-color-dark">
-          No spam guaranteed, So please don’t send any spam mail.
+          {/* No spam guaranteed, So please don’t send any spam mail. */}
         </p>
       </div>
 

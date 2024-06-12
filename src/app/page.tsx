@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 
 import HomePageCarousel from '@/components/Home/Carousel'
+import PlayersBg from '@/components/Photo/PlayersBg'
 import AppStarBackground from '@/components/ui/AppStarBackground'
 
 import Photos from './photos/photos'
@@ -35,6 +36,7 @@ const Home = async ({ searchParams }) => {
         </div>
         <Photos photosResponse={photosResponse} searchParams={searchParams} />
       </section>
+      <PlayersBg />
     </main>
   )
 }
