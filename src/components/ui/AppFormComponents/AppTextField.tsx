@@ -28,9 +28,13 @@ const AppTextField = ({
       label={label}
       type={type}
       name={name}
+      height={70}
       {...register(name, {
         required: required,
       })}
+      containerProps={{
+        className: 'h-[50px]',
+      }}
     >
       {children}
     </Input>
