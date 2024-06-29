@@ -22,10 +22,10 @@ const WithHeader = ({ path }) => {
       <>
         <div className="absolute bottom-0 w-full   bg-transparent  backdrop-brightness-50">
           <h3 className="ml-3 font-semibold text-white ">
-            {path?.split('_')[0]}
+            {path?.split('_')[1]}
           </h3>
           <p className="mb-2 ml-3  text-sm  text-blue-gray-50">
-            {path?.split('_')?.[1]}
+            {path?.split('_')?.[2]}
           </p>
         </div>
       </>

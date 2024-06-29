@@ -27,7 +27,7 @@ export default function DialogCloseButton({ directory, photosResponse }) {
       handler={handleOpen}
     >
       <DialogHeader className=" text-white flex  justify-between   items-center">
-        {directory.split('_')?.[0]}
+        {directory.split('_')?.[1]}
         <IconButton
           className="rounded-full"
           onClick={() => setIsPhotoModalOpen(false)}
@@ -37,7 +37,7 @@ export default function DialogCloseButton({ directory, photosResponse }) {
       </DialogHeader>
 
       <DialogBody className="  text-gray-300">
-        <div>{directory.split('_')?.[1]}</div>
+        <div>{directory.split('_')?.[2]}</div>
 
         <Carousel className=" min-h-[80vh] w-full">
           {photosResponse.path?.map((path, index) => (
@@ -45,7 +45,7 @@ export default function DialogCloseButton({ directory, photosResponse }) {
               key={index}
               src={`/images/photos/${directory}/${path}`}
               alt="Carousel"
-              width={300}
+              width={1200}
               height={500}
               className="max-h-[80vh] w-full object-contain min-h-[700px]"
             />

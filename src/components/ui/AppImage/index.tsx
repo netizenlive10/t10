@@ -19,8 +19,9 @@ const AppImage = ({ height, width, src, alt, className }: ImageProps) => {
       src={error ? '/assets/social/brokenImage.svg' : src}
       alt={alt}
       className={`object-contain ${className}`}
-      loading="lazy"
+      // loading="lazy"
       onError={setError}
+      priority={true}
     />
   )
 }

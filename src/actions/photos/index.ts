@@ -18,6 +18,7 @@ const handleDirectory = (folderData: Dirent[], response: PhotoResponse) => {
             response.path.push(data.name);
         }
     }
+    // response.path.sort((a, b) => Number(a.slice(0, 3)) - Number(b.slice(0, 3)));
 };
 
 
